@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+*{
+  scroll-behavior: smooth;
+  font-weight: 800;
+}
+
+body{
+    
+    background-image: url("back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    margin: 10px 0px 10px 10px;
+    margin-top: 0;
+    animation: background-blur 5s;
+}
+.navbar{
+    background-color: rgb(7, 156, 182);
+    display: flex;
+    margin: 10px 20px 50px 20px;
+    padding: 10px 10px 10px 10px;
+    position: sticky;
+    top: 0;
+}
+h1{
+    color: rgb(3, 23, 133);
+    background-color: rgba(0, 0, 0, 0.404);
+    animation: Color 5s;
+}
+h2{
+    color: rgb(77, 67, 221);
+}
+h4{
+    margin-left: 30px;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li{
+    color: rgb(14, 14, 56);
+}
+
+.navbar ul{
+   background-color: rgb(21, 110, 212);
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   list-style-type: none;
+}
+.navbar li{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+.navbar li:hover{
+    transform: translateY(-5px);
+    transition: .5s ease;
+    color: rgb(17, 192, 26);
+}
+img:hover{
+    transform: scale(90%);
+    transition: 2s ease;
+}
+form{
+    border: solid 2px blue;
+    border: dashed 2px black;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 153, 255, 0.171);
+
+}
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    border: solid black 2px;
+    
+}
+.home{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh; /* view port height*/
+
+}
+a{
+    text-decoration-style: none;
+}
+.aboutme{
+   background-color: rgb(106, 170, 149);
+   height: 200px;
+   font-family: "Share Tech", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+summary{
+    font-size: 20px;
+    
+}
+details{
+    font-size: 15px;
+}
+.contact{
+    height: 100px;
+}
+@keyframes Color{
+    0%{
+        color: aliceblue;
+        transform: translateY(100px);
+    }
+    50%{
+        color: blanchedalmond;
+    }
+    100%{
+        color: rgb(18, 65, 49);
+        transform: translateY(0px);
+    }
+}
+@keyframes background-blur{
+    0%{
+        backdrop-filter: blur(100px);
+    }
+    100%{
+        backdrop-filter: blur(0px);
+
+    }
+}
